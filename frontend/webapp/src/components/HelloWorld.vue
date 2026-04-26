@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     getStarted() {
-      
+      this.$router.push('/getStarted')
     }
   }
 }
@@ -22,10 +22,16 @@ export default {
 <style>
 .start {
   color: white;
-  height: 20px;
+  height: 40px;
   background-color: rgb(168, 50, 50);
   border-radius: 5px;
   border: none;
-  size: 100px;
+  width: 100px;
+  transition: background-color 0.15s ease;
+}
+
+/* when button is pressed */
+.start:active {
+  background-color: rgb(200, 80, 80); /* lighter red */
 }
 </style>
